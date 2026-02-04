@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SCT_CS_3 – Image Encryption Tool</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🔐 Image Encryption Tool</h1>
+    <p>Pixel Manipulation Based Encryption</p>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+
+        <input type="number" name="key" placeholder="Enter Key (0-255)" required>
+
+        <select name="mode">
+            <option value="encrypt">Encrypt Image</option>
+            <option value="decrypt">Decrypt Image</option>
+        </select>
+
+        <button type="submit">Process Image</button>
+    </form>
+
+    <footer>SCT_CS_3 | Cyber Security Internship Project</footer>
+</div>
+
+</body>
+</html>
